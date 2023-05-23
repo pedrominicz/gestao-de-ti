@@ -21,7 +21,7 @@ O escopo consistem em:
 A estratégia para atingir estes objetivos seguirá o seguinte plano:
 
 1. Conversar com o time de front-end e listar quais dados do banco o front-end necessita
-2. Formular uma estratégia de implementação e o design temporário da API
+2. Formular uma estratégia de implementação e o design inicial da API
 3. Desenvolver o suficiente da API GraphQL e migrar um recurso específico do front-end para a nova API
     1. Inicialmente, garantir que o recurso selecionado funciona com a nova API, sem se preocupar com segurança ou eficiência
     2. Em seguida, garantir que o recurso funciona com autenticação
