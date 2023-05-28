@@ -33,3 +33,60 @@ A estratégia para atingir estes objetivos seguirá o seguinte plano:
 Como a nova API é completamente independente dos endpoints atuais, é possível manter os endpoints funcionando enquanto testamos a nova API. Sendo assim, é possível fazer o teste do item 3 nos servidores de homologação sem perturbar outras atividades que possam estar acontecendo no momento. O "recurso específico" pode ser uma página do web app ou até mesmo um único gráfico.
 
 A versão final da API deve ser entregue sexta-feira dia 9 de junho de 2023.
+
+#### Sprints
+
+**Sprint 1** (6/2 à 17/2)
+
+- Pesquisar tecnologias
+    + GraphQL
+    + Graphene
+    + Flask
+    + SQLAlchemy
+- Conversar com o time de front-end
+    + Quais tabelas precisam ser expostas pela API?
+
+**Sprint 2** (20/2 à 3/3)
+
+- Versão de teste da API
+    + Modelar as tabelas OS execução, OS saída e OS entrada
+    + Modelar as tabelas UC e UC status
+
+**Sprint 3** (6/3 à 17/3)
+
+- Versão de teste da API
+    + Autenticação usando JSON Web Token
+    + Documentar as tabelas OS execução, OS saída e OS entrada
+
+**Sprint 4** (20/3 à 31/3)
+
+- Começar a versão final da API
+    + Modelar as tabelas Comando, Conta e Roteador
+    + Documentar as tabelas UC e UC status
+
+**Sprint 5** (3/4 à 14/4)
+
+- Modelar as tabelas Alarme e Leitura
+- Documentar as tabelas Comando, Conta e Roteador
+- Pesquisar sobre problema de performance
+
+**Sprint 6** (17/4 à 28/4)
+
+- Documentar as tabelas Alarme e Leitura
+- Modelar as tabelas Filial e Bloco
+- Refatorar o projeto para utilizar `DataLoader`s (1/2)
+
+**Sprint 7** (1/5 à 12/5)
+
+- Modelar as tabelas Válvula, Andar Medidor
+- Refatorar o projeto para utilizar `DataLoader`s (2/2)
+
+**Sprint 8** (15/5 à 26/5)
+
+- Modelar as tabelas Net, Usuário e Sign In
+- Modelar as tabelas Estado, Cidade e Filial
+
+**Sprint 9** (29/5 à 9/6)
+
+- Documentar as tabelas Net, Usuário e Sign In
+- Testar a API
