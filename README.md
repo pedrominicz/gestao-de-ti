@@ -31,3 +31,5 @@ A estratégia para atingir estes objetivos seguirá o seguinte plano:
 5. Expandir a API para que todos os dados necessários estejam disponíveis
 
 Como a nova API é completamente independente dos endpoints atuais, é possível manter os endpoints funcionando enquanto testamos a nova API. Sendo assim, é possível fazer o teste do item 3 nos servidores de homologação sem perturbar outras atividades que possam estar acontecendo no momento. O "recurso específico" pode ser uma página do web app ou até mesmo um único gráfico.
+
+A versão final da API deve ser entregue sexta-feira dia 9 de junho de 2023.
