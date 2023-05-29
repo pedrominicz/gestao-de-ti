@@ -1,5 +1,7 @@
 ### Gestão de TI
 
+#### [Project Model Canvas](https://pedrominicz.github.io/gestao-de-ti/canvas.html)
+
 #### Visão do produto ou serviço de TI a ser trabalhado
 
 O produto é interno à nossa própria empresa.
