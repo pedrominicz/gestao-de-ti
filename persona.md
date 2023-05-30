@@ -1,6 +1,10 @@
+### Persona 1
+
 **Nome:** Iago
 
-**Foto:** TODO
+**Foto:**
+
+![](persona-1.jpg)
 
 **Cargo:** Web Developer
 
@@ -18,13 +22,15 @@
 
 
 
----
 
 
+### Persona 2
 
 **Nome:** Luciano
 
-**Foto:** TODO
+**Foto:**
+
+![](persona-2.jpg)
 
 **Cargo:** Líder do time de front-end
 

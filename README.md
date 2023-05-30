@@ -1,7 +1,5 @@
 ### Gestão de TI
 
-#### [Project Model Canvas](https://pedrominicz.github.io/gestao-de-ti/canvas.html)
-
 #### Visão do produto ou serviço de TI a ser trabalhado
 
 O produto é interno à nossa própria empresa.
@@ -35,6 +33,10 @@ A estratégia para atingir estes objetivos seguirá o seguinte plano:
 Como a nova API é completamente independente dos endpoints atuais, é possível manter os endpoints funcionando enquanto testamos a nova API. Sendo assim, é possível fazer o teste do item 3 nos servidores de homologação sem perturbar outras atividades que possam estar acontecendo no momento. O "recurso específico" pode ser uma página do web app ou até mesmo um único gráfico.
 
 A versão final da API deve ser entregue sexta-feira dia 9 de junho de 2023.
+
+<!-- Paragrafo sobre como os items 1 a 3 devem gastar 1 ou 2 sprints enquanto o 5 vai gastar a maior quantidade de tempo -->
+
+<!-- Governança de dados -->
 
 #### Sprints
 

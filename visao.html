@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Gestão de TI &mdash; Visão Geral</title>
+
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR4nGNgAAIAAAUAAXpeqz8AAAAASUVORK5CYII=">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Visão serviço de TI a ser trabalhado</h1>
+
+  <p>O produto é interno à nossa própria empresa.</p>
+
+  <p>Nossa empresa desenvolve sistemas para gestão de faturas e controle de gastos empregados nos setores de consumo de água, gás natural e eletricidade. Dispositivos são instalados na propriedade dos clientes para coleta de dados. Os dados são analisados e ficam à disposição do cliente.</p>
+
+  <p>O setor de tecnologia da empresa é dividido em três times. O time de hardware desenvolve os dispositivos para coleta de dados. O time do front-end mantém uma interface web que os clientes acessam. Estas interfaces mostram as informações e análises de formas não triviais com gráficos, etc., ou seja, elas precisam correlacionar vários dados do banco de dados. Entre outras coisas, o time de back-end é responsável por criar endpoints que fazem as queries necessárias para as análises mostradas no front-end. Isto não é ideal, pois demanda tempo do time de back-end e atrapalha o trabalho do time de front-end que precisa constantemente esperar pelo desenvolvimento de novos endpoints.</p>
+
+  <p>O time de front-end quer usar GraphQL para fazer queries no banco de dados. Uma API GraphQL permitirá que a query seja especificada no front-end eliminando a necessidade de constantemente criar novos endpoints. Com isso, o time de front-end será mais independente do time de back-end, aumentando sua eficiência.</p>
+
+  <p>O escopo consistem em:</p>
+
+  <ol>
+    <li>Disponibilizar todos os dados atualmente providos pelo back-end através da API GraphQL</li>
+    <li>Garantir a segurança da API<ol>
+        <li>Sistema de autenticação para acesso à API</li>
+        <li>A API não deve expor dados protegidos do banco de dados</li>
+      </ol>
+    </li>
+    <li>A API GraphQL deve ser tão eficiente quando os endpoints atuais</li>
+  </ol>
+
+  <p>A estratégia para atingir estes objetivos seguirá o seguinte plano:</p>
+
+  <ol>
+    <li>Conversar com o time de front-end e listar quais dados do banco o front-end necessita</li>
+    <li>Formular uma estratégia de implementação e o design inicial da API</li>
+    <li>Desenvolver o suficiente da API GraphQL e migrar um recurso específico do front-end para a nova API<ol>
+        <li>Inicialmente, garantir que o recurso selecionado funciona com a nova API, sem se preocupar com segurança ou eficiência</li>
+        <li>Em seguida, garantir que o recurso funciona com autenticação</li>
+        <li>Finalmente, garantir que o recurso é tão eficiente na nova API quanto no antigo endpoint</li>
+        <li>Ouvir o feedback do time de front-end</li>
+      </ol>
+    </li>
+    <li>Utilizar conhecimento adquirido no item anterior para revisar o design da API, caso necessário</li>
+    <li>Expandir a API para que todos os dados necessários estejam disponíveis</li>
+  </ol>
+
+  <p>Como a nova API é completamente independente dos endpoints atuais, é possível manter os endpoints funcionando enquanto testamos a nova API. Sendo assim, é possível fazer o teste do item 3 nos servidores de homologação sem perturbar outras atividades que possam estar acontecendo no momento. O &quot;recurso específico&quot; pode ser uma página do web app ou até mesmo um único gráfico.</p>
+
+  <p>A versão final da API deve ser entregue sexta-feira dia 9 de junho de 2023.</p>
+</body>
+</html>

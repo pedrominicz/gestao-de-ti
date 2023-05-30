@@ -1,0 +1,25 @@
+- Autenticação usando JSON Web Token
+
+- Modelar a tabela OS execução
+- Modelar a tabela OS saída
+- Modelar a tabela OS entrada
+- Modelar a tabela UC
+- Modelar a tabela UC status
+- Modelar a tabela Comando
+- Modelar a tabela Conta
+- Modelar a tabela Roteador
+- Modelar a tabela Alarme
+- Modelar a tabela Leitura
+- Modelar a tabela Comando
+- Modelar a tabela Conta
+- Modelar a tabela Roteador
+- Modelar a tabela Filial
+- Modelar a tabela Bloco
+- Modelar a tabela Válvula
+- Modelar a tabela Andar Medidor
+- Modelar a tabela Net
+- Modelar a tabela Usuário
+- Modelar a tabela Sign In
+- Modelar a tabela Estado
+- Modelar a tabela Cidade
+- Modelar a tabela Filial
