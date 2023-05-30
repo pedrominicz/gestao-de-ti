@@ -12,5 +12,92 @@
 </head>
 <body>
   <h1>User Stories</h1>
+
+  <section id="story-1">
+    <h2>User Story &mdash; Autenticação com JSON web token</h2>
+
+    <p>
+    Eu como líder do time de front-end gostaria de conseguir autenticar na API
+    GraphQL para que o time de front-end possa acessar a API
+    de forma segura.
+    </p>
+
+    <strong>Critérios de Aceitação</strong>
+
+    <ul>
+      <li>A API só deve ser acessível para usuários autenticados</li>
+      <li>A API não deve ter nenhum conceito de "conexão" que necessite que o front-end precise administrar</li>
+      <li>A autenticação deve acontecer por <em>requisição</em></li>
+      <li>A autenticação deve ser feita por JSON web token</li>
+    </ul>
+
+    <strong>Definition of Done</strong>
+
+    <p>O sistema de autenticação da API GraphQL foi testado por um member do
+    time de front-end.</p>
+  </section>
+
+  <section id="story-2">
+    <h2>User Story &mdash; Performance da API</h2>
+
+    <p>Eu como líder do time de front-end gostaria de a API GraphQL tivesse
+    alta performance para que o time de front-end possa criar dashboards
+    responsivos.</p>
+
+    <strong>Critérios de Aceitação</strong>
+
+    <ul>
+      <li>A nova API GraphQL deve ser tão rápida quanto a antiga API REST</li>
+      <li>Consultas simples (uma tabela, menos de mil linhas) API GraphQL devem levar menos de 100 milissegundos</li>
+      <li>Consultas complexas (diversas tabelas) devem usar <em>batching</em> para otimizar consultas ao banco de dados e diminuir a latência</li>
+    </ul>
+
+    <strong>Definition of Done</strong>
+
+    <p>Foi testado que a nova API GraphQL tem performance igual ou melhor que a
+    antiga API REST nos principais dashboards.</p>
+  </section>
+
+  <section id="story-3">
+    <h2>User Story &mdash; Acessar tabelas do banco de dados</h2>
+
+    <p>Eu como web developer gostaria de ter acesso a diversas tabelas do banco
+    de dados através de uma API GraphQL para que consiga desenvolver novos
+    dashboards sem depender do time de back-end.</p>
+
+    <strong>Critérios de Aceitação</strong>
+
+    <p>Conseguir acessar as seguintes tabelas:</p>
+    <ul>
+      <li>OS execução</li>
+      <li>OS saída</li>
+      <li>OS entrada</li>
+      <li>UC</li>
+      <li>UC status</li>
+      <li>Comando</li>
+      <li>Conta</li>
+      <li>Roteador</li>
+      <li>Alarme</li>
+      <li>Leitura</li>
+      <li>Comando</li>
+      <li>Conta</li>
+      <li>Roteador</li>
+      <li>Filial</li>
+      <li>Bloco</li>
+      <li>Válvula</li>
+      <li>Andar Medidor</li>
+      <li>Net</li>
+      <li>Usuário</li>
+      <li>Sign In</li>
+      <li>Estado</li>
+      <li>Cidade</li>
+      <li>Filial</li>
+    </ul>
+
+    <strong>Definition of Done</strong>
+
+    <p>Foi testado o acesso a dados de todas as tabelas necessárias através da
+    API.</p>
+  </section>
 </body>
 </html>
