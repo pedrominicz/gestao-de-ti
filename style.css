@@ -11,6 +11,10 @@ h1 {
   text-align: center;
 }
 
+ul {
+  padding-left: 1em;
+}
+
 table {
   table-layout: fixed;
   width: 100%;
@@ -21,8 +25,4 @@ table td {
   box-shadow: 0 0 20px #eee;
   padding: 1em;
   vertical-align: top;
-}
-
-ul {
-  padding-left: 1em;
 }
