@@ -1,25 +1,39 @@
-- Autenticação usando JSON Web Token
-
-- Modelar a tabela OS execução
-- Modelar a tabela OS saída
-- Modelar a tabela OS entrada
+- Configurar a biblioteca de GraphQL com o back-end atual
+- Conectar a biblioteca GraphQL ao banco de dados
+- Criar endpoint da API GraphQL no back-end
+- Modelar a tabela OSEntrada
+- Modelar a tabela OSExecucao
+- Modelar a tabela OSSaida
 - Modelar a tabela UC
-- Modelar a tabela UC status
+- Modelar a tabela UCStatus
+- Criar sistema de autenticação para acessos à API
+- Atualizar as queries existentes para utilizar autenticação
+- Modelar a tabela Departamentos
+- Modelar a tabela Credenciais
 - Modelar a tabela Comando
 - Modelar a tabela Conta
 - Modelar a tabela Roteador
+- Modelar a tabela Ordens
+- Modelar a tabela Restricoes
 - Modelar a tabela Alarme
 - Modelar a tabela Leitura
-- Modelar a tabela Comando
-- Modelar a tabela Conta
-- Modelar a tabela Roteador
-- Modelar a tabela Filial
-- Modelar a tabela Bloco
-- Modelar a tabela Válvula
-- Modelar a tabela Andar Medidor
+- Modelar a tabela Produtos
+- Mediar acesso ao banco de dados através de DataLoaders
+- Modelar a tabela Progresso
+- Modelar a tabela Regiões
+- Portar as queries existences para utilizar DataLoaders
+- Modelar a tabela Valvula
+- Modelar a tabela Andar
+- Modelar a tabela Medidor
+- Modelar a tabela Canais
+- Modelar a tabela Regras
 - Modelar a tabela Net
-- Modelar a tabela Usuário
-- Modelar a tabela Sign In
+- Modelar a tabela Usuario
+- Modelar a tabela SignIn
 - Modelar a tabela Estado
 - Modelar a tabela Cidade
-- Modelar a tabela Filial
+- Modelar a tabela Alertas
+- Modelar a tabela Atividades
+- Modelar a tabela Temporizadores
+- Modelar a tabela Promoções
+- Testar a API

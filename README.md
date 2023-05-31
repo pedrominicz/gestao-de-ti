@@ -1,7 +1,5 @@
 ### Gestão de TI
 
-#### [Project Model Canvas](https://pedrominicz.github.io/gestao-de-ti/canvas.html)
-
 #### Visão do produto ou serviço de TI a ser trabalhado
 
 O produto é interno à nossa própria empresa.
@@ -40,55 +38,66 @@ A versão final da API deve ser entregue sexta-feira dia 9 de junho de 2023.
 
 **Sprint 1** (6/2 à 17/2)
 
-- Pesquisar tecnologias
-    + GraphQL
-    + Graphene
-    + Flask
-    + SQLAlchemy
-- Conversar com o time de front-end
-    + Quais tabelas precisam ser expostas pela API?
+- Configurar a biblioteca de GraphQL com o back-end atual
+- Conectar a biblioteca GraphQL ao banco de dados
+- Criar endpoint da API GraphQL no back-end
 
 **Sprint 2** (20/2 à 3/3)
 
-- Versão de teste da API
-    + Modelar as tabelas OS execução, OS saída e OS entrada
-    + Modelar as tabelas UC e UC status
+- Modelar a tabela OSEntrada
+- Modelar a tabela OSExecucao
+- Modelar a tabela OSSaida
+- Modelar a tabela UC
+- Modelar a tabela UCStatus
 
 **Sprint 3** (6/3 à 17/3)
 
-- Versão de teste da API
-    + Autenticação usando JSON Web Token
-    + Documentar as tabelas OS execução, OS saída e OS entrada
+- Criar sistema de autenticação para acessos à API
+- Atualizar as queries existentes para utilizar autenticação
+- Modelar a tabela Departamentos
+- Modelar a tabela Credenciais
 
 **Sprint 4** (20/3 à 31/3)
 
-- Começar a versão final da API
-    + Modelar as tabelas Comando, Conta e Roteador
-    + Documentar as tabelas UC e UC status
+- Modelar a tabela Comando
+- Modelar a tabela Conta
+- Modelar a tabela Roteador
+- Modelar a tabela Ordens
+- Modelar a tabela Restricoes
 
 **Sprint 5** (3/4 à 14/4)
 
-- Modelar as tabelas Alarme e Leitura
-- Documentar as tabelas Comando, Conta e Roteador
-- Pesquisar sobre problema de performance
+- Modelar a tabela Alarme
+- Modelar a tabela Leitura
+- Modelar a tabela Produtos
+- Mediar acesso ao banco de dados através de DataLoaders
 
 **Sprint 6** (17/4 à 28/4)
 
-- Documentar as tabelas Alarme e Leitura
-- Modelar as tabelas Filial e Bloco
-- Refatorar o projeto para utilizar `DataLoader`s (1/2)
+- Modelar a tabela Progresso
+- Modelar a tabela Regiões
+- Portar as queries existences para utilizar DataLoaders
 
 **Sprint 7** (1/5 à 12/5)
 
-- Modelar as tabelas Válvula, Andar Medidor
-- Refatorar o projeto para utilizar `DataLoader`s (2/2)
+- Modelar a tabela Valvula
+- Modelar a tabela Andar
+- Modelar a tabela Medidor
+- Modelar a tabela Canais
+- Modelar a tabela Regras
 
 **Sprint 8** (15/5 à 26/5)
 
-- Modelar as tabelas Net, Usuário e Sign In
-- Modelar as tabelas Estado, Cidade e Filial
+- Modelar a tabela Net
+- Modelar a tabela Usuario
+- Modelar a tabela SignIn
+- Modelar a tabela Estado
+- Modelar a tabela Cidade
 
 **Sprint 9** (29/5 à 9/6)
 
-- Documentar as tabelas Net, Usuário e Sign In
+- Modelar a tabela Alertas
+- Modelar a tabela Atividades
+- Modelar a tabela Temporizadores
+- Modelar a tabela Promoções
 - Testar a API
