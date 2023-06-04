@@ -9,10 +9,47 @@
   <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR4nGNgAAIAAAUAAXpeqz8AAAAASUVORK5CYII=">
 
   <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style type="text/css">
+    td, th {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <h1>Plano de Custos</h1>
 
-  <p>TODO</p>
+  <h4>Time</h4>
+
+  <ul>
+    <li>Scrum Master/Product Owner: R$ 6.000,00/mês</li>
+    <li>1 desenvolvedor pleno: R$ 6.000,00/mês</li>
+    <li>1 desenvolvedor júnior: R$ 3.000,00/mês</li>
+  </ul>
+
+  <p>Considerando uma carga horária mensal de 160 horas por desenvolvedor,
+  temos o seguinte custo mensal por desenvolvedor:</p>
+
+  <ul>
+    <li>Desenvolvedor júnior: R$ 18,75/hora</li>
+    <li>Desenvolvedor pleno: R$ 37,50/hora</li>
+  </ul>
+
+  <p>Considerando uma carga horária mensal de 80 horas para o PO/SM, temos um custo mensal de R$ 3.000,00.</p>
+
+  <h4>Custo Total das Sprints</h4>
+
+  <table id="table">
+    <tr>
+      <th width="5%">Sprint</th>
+      <th width="10%">Duração</th>
+      <th>SM/PO</th>
+      <th>Desenvolvedor Pleno</th>
+      <th>Desenvolvedor Júnior</th>
+      <th>Total</th>
+    </tr>
+  </table>
+
+  <script type="text/javascript" src="custo.js"></script>
 </body>
 </html>
