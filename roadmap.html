@@ -9,10 +9,161 @@
   <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR4nGNgAAIAAAUAAXpeqz8AAAAASUVORK5CYII=">
 
   <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style type="text/css">
+    body {
+      overflow-y: scroll;
+    }
+  </style>
 </head>
 <body>
+  <h1>Plano de Releases</h1>
+
+  <strong>Release 1:</strong> 17/3
+
+  <p>Versão de teste da API. Esta versão pode acessar as tabelas OSEntrada,
+  OSExecucao, OSSaida, UC e UCStatus, ou seja, é o suficiente para processar
+  Ordens de Serviço (OS) e acessar Unidades de Controle (UC).</p>
+
+  <p>Esta versão também implementa autenticação para requisições à API.</p>
+
+  <strong>Release 2:</strong> 9/6
+
+  <p>Versão final da API. Esta versão pode acessar todas as tabelas necessárias
+  no front-end.</p>
+
   <h1>Roadmap</h1>
 
-  <p>TODO</p>
+  <details>
+    <summary><strong>Sprint 1</strong> (6/2 à 17/2)</summary>
+
+    <div><strong>Backlog</strong><ul>
+      <li>Configurar a biblioteca de GraphQL com o back-end atual</li>
+      <li>Conectar a biblioteca GraphQL ao banco de dados</li>
+      <li>Criar endpoint da API GraphQL no back-end</li>
+    </ul></div>
+  </details>
+
+  <details>
+    <summary><strong>Sprint 2</strong> (20/2 à 3/3)</summary>
+
+    <div><strong>Backlog</strong><ul>
+      <li>Modelar a tabela OSEntrada</li>
+      <li>Modelar a tabela OSExecucao</li>
+      <li>Modelar a tabela OSSaida</li>
+      <li>Modelar a tabela UC</li>
+      <li>Modelar a tabela UCStatus</li>
+    </ul></div>
+  </details>
+
+  <details>
+    <summary><strong>Sprint 3</strong> (6/3 à 17/3)</summary>
+
+    <div><strong>Backlog</strong><ul>
+      <li>Criar sistema de autenticação para acessos à API</li>
+      <li>Atualizar as queries existentes para utilizar autenticação</li>
+      <li>Modelar a tabela Departamentos</li>
+      <li>Modelar a tabela Credenciais</li>
+    </ul></div>
+  </details>
+
+  <details>
+    <summary><strong>Sprint 4</strong> (20/3 à 31/3)</summary>
+
+    <div><strong>Backlog</strong><ul>
+      <li>Modelar a tabela Comando</li>
+      <li>Modelar a tabela Conta</li>
+      <li>Modelar a tabela Roteador</li>
+      <li>Modelar a tabela Ordens</li>
+      <li>Modelar a tabela Restricoes</li>
+    </ul></div>
+  </details>
+
+  <details>
+    <summary><strong>Sprint 5</strong> (3/4 à 14/4)</summary>
+
+    <div><strong>Backlog</strong><ul><li>Modelar a tabela Alarme</li>
+      <li>Modelar a tabela Leitura</li>
+      <li>Modelar a tabela Produtos</li>
+      <li>Mediar acesso ao banco de dados através de DataLoaders</li>
+    </ul></div>
+  </details>
+
+  <details>
+    <summary><strong>Sprint 6</strong> (17/4 à 28/4)</summary>
+
+    <div><strong>Backlog</strong><ul>
+      <li>Modelar a tabela Progresso</li>
+      <li>Modelar a tabela Regiões</li>
+      <li>Portar as queries existences para utilizar DataLoaders</li>
+    </ul></div>
+  </details>
+
+  <details>
+    <summary><strong>Sprint 7</strong> (1/5 à 12/5)</summary>
+
+    <div><strong>Backlog</strong><ul>
+      <li>Modelar a tabela Valvula</li>
+      <li>Modelar a tabela Andar</li>
+      <li>Modelar a tabela Medidor</li>
+      <li>Modelar a tabela Canais</li>
+      <li>Modelar a tabela Regras</li>
+    </ul></div>
+  </details>
+
+  <details>
+    <summary><strong>Sprint 8</strong> (15/5 à 26/5)</summary>
+
+    <div><strong>Backlog</strong><ul>
+      <li>Modelar a tabela Net</li>
+      <li>Modelar a tabela Usuario</li>
+      <li>Modelar a tabela SignIn</li>
+      <li>Modelar a tabela Estado</li>
+      <li>Modelar a tabela Cidade</li>
+    </ul></div>
+  </details>
+
+  <details>
+    <summary><strong>Sprint 9</strong> (29/5 à 9/6)</summary>
+
+    <div><strong>Backlog</strong><ul>
+      <li>Modelar a tabela Alertas</li>
+      <li>Modelar a tabela Atividades</li>
+      <li>Modelar a tabela Temporizadores</li>
+      <li>Modelar a tabela Promoções</li>
+      <li>Testar a API</li>
+    </ul></div>
+  </details>
+
+  <h1>Cerimônias</h1>
+
+  <strong>Sprint planning</strong>
+
+  <p>A cerimônia de sprint planning será realizada no primeiro dia de cada
+  sprint. A cerimônia deve durar no máximo três horas. O propósito da cerimônia
+  é distribuir tarefas para serem realizadas na sprint.</p>
+
+  <strong>Daily stand-up</strong>
+
+  <p>A cerimônia daily stand-up será realizada de segunda a sexta exceto em
+  dias que outra cerimônia já é realizada. A cerimônia deve durar no máximo 10
+  minutos. O propósito da cerimônia é brevemente relatar progresso e mencionar
+  dificuldades encontradas.</p>
+
+  <strong>Sprint review</strong>
+
+  <p>A cerimônia de sprint review será realizada na última quinta-feira de cada
+  sprint. A cerimônia deve durar no máximo duas horas. Pelo menos um membro do
+  time de front end deve participar da cerimônia, ou seja, pelo menos um
+  stakeholder deve participar. O propósito da cerimônia é discutir a API para
+  garantir que ela satisfaz os requisitos necessários.</p>
+
+  <strong>Sprint retrospective</strong>
+
+  <p>A cerimônia de sprint retrospective será realizada na última sexta-feira
+  de cada sprint, ou seja, no último dia de cada sprint. A cerimônia deve durar
+  no máximo três horas. O propósito da cerimônia é descobrir as melhorias
+  necessárias para que a equipe aprimore seu desempenho e alcance eficiência
+  máxima.</p>
 </body>
 </html>
