@@ -11,10 +11,12 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <div><a href="index.html">Índice</a></div>
+
   <h1>User Stories</h1>
 
   <section id="story-1">
-    <h2>User Story &mdash; Autenticação com JSON web token</h2>
+    <h2>User Story 1 &mdash; Autenticação com JSON web token</h2>
 
     <p>
     Eu como líder do time de front-end gostaria de conseguir autenticar na API
@@ -35,10 +37,13 @@
 
     <p>O sistema de autenticação da API GraphQL foi testado por um member do
     time de front-end.</p>
+
+    <strong>Estimativa</strong>
+    <p>Esta atividade deve durar uma semana</p>
   </section>
 
   <section id="story-2">
-    <h2>User Story &mdash; Performance da API</h2>
+    <h2>User Story 2 &mdash; Performance da API</h2>
 
     <p>Eu como líder do time de front-end gostaria de a API GraphQL tivesse
     alta performance para que o time de front-end possa criar dashboards
@@ -56,56 +61,195 @@
 
     <p>Foi testado que a nova API GraphQL tem performance igual ou melhor que a
     antiga API REST nos principais dashboards.</p>
+
+    <strong>Estimativa</strong>
+    <p>Esta atividade deve durar duas semanas</p>
   </section>
 
   <section id="story-3">
-    <h2>User Story &mdash; Acessar tabelas do banco de dados</h2>
+    <h2>User Story 3 &mdash; Acessar tabelas de controle</h2>
 
-    <p>Eu como web developer gostaria de ter acesso a diversas tabelas do banco
-    de dados através de uma API GraphQL para que consiga desenvolver novos
-    dashboards sem depender do time de back-end.</p>
+    <p>Eu como web developer gostaria de ter acesso às tabelas de unidades de controle (UC) e ordens de serviço (OS) do
+    banco de dados através de uma API GraphQL para que consiga desenvolver
+    novos recursos para o controle de operações sem depender do time de back-end.</p>
+
+    <strong>Critérios de Aceitação</strong>
+
+    <p>Conseguir acessar as seguintes tabelas:</p>
+    <ul>
+      <li>OSEntrada</li>
+      <li>OSExecucao</li>
+      <li>OSSaida</li>
+      <li>UC</li>
+      <li>UCStatus</li>
+    </ul>
+
+    <strong>Definition of Done</strong>
+
+    <p>Foi testado o acesso e modificação de dados das tabelas listadas através da
+    API.</p>
+
+    <strong>Estimativa</strong>
+    <p>Esta atividade deve durar três semanas pela complexidade do modelo de dados nas tabelas envolvidas.</p>
+  </section>
+
+  <section id="story-4">
+    <h2>User Story 4 &mdash; Acessar tabelas de gerência de recursos humanos</h2>
+
+    <p>Eu como web developer gostaria de ter acesso às tabelas de gerência de recursos humanos
+    banco de dados através de uma API GraphQL para que consiga desenvolver
+    novos dashboards para o setor de recursos humanos sem depender do time de back-end.</p>
+
+    <strong>Critérios de Aceitação</strong>
+
+    <p>Conseguir acessar as seguintes tabelas:</p>
+    <ul>
+      <li>Departamentos</li>
+      <li>Credenciais</li>
+      <li>Comando</li>
+      <li>Conta</li>
+      <li>Roteador</li>
+      <li>Ordens</li>
+      <li>Restricoes</li>
+    </ul>
+
+    <strong>Definition of Done</strong>
+
+    <p>Foi testado o acesso e modificação de dados das tabelas listadas através da
+    API.</p>
+
+    <strong>Estimativa</strong>
+    <p>Esta atividade deve durar duas semanas</p>
+  </section>
+
+  <section id="story-5">
+    <h2>User Story 5 &mdash; Acessar tabelas com dados das intalações físicas</h2>
+
+    <p>Eu como web developer gostaria de ter acesso às tabelas com dados das intalações físicas
+    banco de dados através de uma API GraphQL para que consiga desenvolver
+    novas telas de monitoramento de progresso de instalações sem depender do time de back-end.</p>
 
     <strong>Critérios de Aceitação</strong>
 
     <p>Conseguir acessar as seguintes tabelas:</p>
     <ul>
       <li>Alarme</li>
-      <li>Alertas</li>
-      <li>Andar</li>
-      <li>Atividades</li>
-      <li>Canais</li>
-      <li>Cidade</li>
-      <li>Comando</li>
-      <li>Conta</li>
-      <li>Credenciais</li>
-      <li>Departamentos</li>
-      <li>Estado</li>
       <li>Leitura</li>
-      <li>Medidor</li>
-      <li>Net</li>
-      <li>OSEntrada</li>
-      <li>OSExecucao</li>
-      <li>OSSaida</li>
-      <li>Ordens</li>
       <li>Produtos</li>
       <li>Progresso</li>
-      <li>Promoções</li>
       <li>Regiões</li>
-      <li>Regras</li>
-      <li>Restricoes</li>
-      <li>Roteador</li>
-      <li>SignIn</li>
-      <li>Temporizadores</li>
-      <li>UC</li>
-      <li>UCStatus</li>
-      <li>Usuario</li>
-      <li>Valvula</li>
     </ul>
 
     <strong>Definition of Done</strong>
 
-    <p>Foi testado o acesso a dados de todas as tabelas necessárias através da
+    <p>Foi testado o acesso e modificação de dados das tabelas listadas através da
     API.</p>
+
+    <strong>Estimativa</strong>
+    <p>Esta atividade deve durar duas semanas</p>
+  </section>
+
+  <section id="story-6">
+    <h2>User Story 6 &mdash; Acessar tabelas com dados dos medidores</h2>
+
+    <p>Eu como web developer gostaria de ter acesso às tabelas com dados dos medidores
+    banco de dados através de uma API GraphQL para que consiga desenvolver
+    novas dashboards sem depender do time de back-end.</p>
+
+    <strong>Critérios de Aceitação</strong>
+
+    <p>Conseguir acessar as seguintes tabelas:</p>
+    <ul>
+      <li>Valvula</li>
+      <li>Andar</li>
+      <li>Medidor</li>
+      <li>Canais</li>
+      <li>Regras</li>
+    </ul>
+
+    <strong>Definition of Done</strong>
+
+    <p>Foi testado o acesso e modificação de dados das tabelas listadas através da
+    API.</p>
+
+    <strong>Estimativa</strong>
+    <p>Esta atividade deve durar duas semanas</p>
+  </section>
+
+  <section id="story-7">
+    <h2>User Story 7 &mdash; Acessar tabelas com dados dos clientes</h2>
+
+    <p>Eu como web developer gostaria de ter acesso às tabelas com dados dos clientes
+    banco de dados através de uma API GraphQL para que consiga desenvolver
+    novos dashboards sem depender do time de back-end.</p>
+
+    <strong>Critérios de Aceitação</strong>
+
+    <p>Conseguir acessar as seguintes tabelas:</p>
+    <ul>
+      <li>Net</li>
+      <li>Usuario</li>
+      <li>SignIn</li>
+      <li>Estado</li>
+      <li>Cidade</li>
+    </ul>
+
+    <strong>Definition of Done</strong>
+
+    <p>Foi testado o acesso e modificação de dados das tabelas listadas através da
+    API.</p>
+
+    <strong>Estimativa</strong>
+    <p>Esta atividade deve durar duas semanas</p>
+  </section>
+
+  <section id="story-8">
+    <h2>User Story 8 &mdash; Acessar tabelas com dados dos alertas</h2>
+
+    <p>Eu como web developer gostaria de ter acesso às tabelas com dados dos alertas
+    banco de dados através de uma API GraphQL para que consiga desenvolver
+    novos dashboards sem depender do time de back-end.</p>
+
+    <strong>Critérios de Aceitação</strong>
+
+    <p>Conseguir acessar as seguintes tabelas:</p>
+    <ul>
+      <li>Alertas</li>
+      <li>Atividades</li>
+      <li>Temporizadores</li>
+      <li>Promoções</li>
+    </ul>
+
+    <strong>Definition of Done</strong>
+
+    <p>Foi testado o acesso e modificação de dados das tabelas listadas através da
+    API.</p>
+
+    <strong>Estimativa</strong>
+    <p>Esta atividade deve durar duas semanas</p>
+  </section>
+
+  <section id="story-9">
+    <h2>User Story 9 &mdash; Garantir o funcionamento da API GraphQL</h2>
+
+    <p>Eu como líder do time de front-end gostaria de ter certeza que a nova API GraphQL
+    é estável para que o time de front end possa usá-la sem risco de instabilidade.</p>
+
+    <strong>Critérios de Aceitação</strong>
+
+    <ul>
+      <li>Todas as queries já usadas no front end devem ser testadas</li>
+      <li>Todas as queries com índices devem ser testadas com valores inválidos</li>
+      <li>Todas as queries com parâmetros devem ser testadas com valores inválidos</li>
+    </ul>
+
+    <strong>Definition of Done</strong>
+
+    <p>Foi testado o acesso e modificação de dados de todas às tabelas,
+    inclusive quando o servidor está sob alto estresse.</p>
+
+    <strong>Estimativa</strong>
+    <p>Esta atividade deve durar uma semana</p>
   </section>
 </body>
 </html>
